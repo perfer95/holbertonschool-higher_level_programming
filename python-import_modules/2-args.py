@@ -2,6 +2,7 @@
 # 2-args.py
 
 if __name__ == "__main__":
+    import sys
 
     arg_v = sys.argv
     len_argv = len(arg_v) - 1 #Just arguments no file name
