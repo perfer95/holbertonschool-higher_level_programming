@@ -7,8 +7,12 @@ if __name__ == "__main__":
     arg_v = sys.argv
     len_argv = len(arg_v) - 1 #Just arguments no file name
 
-    if len_argv >= 1:
+    if len_argv > 1:
         print(arg_v, "arguments:")
+        for i in range(1, len_argv + 1):
+            print("{:d}: {}".format(i, arg_v[i]))
+    elif len_argv == 1:
+        print(arg_v, "argument:")
         for i in range(1, len_argv + 1):
             print("{:d}: {}".format(i, arg_v[i]))
     elif len_argv == 0:
