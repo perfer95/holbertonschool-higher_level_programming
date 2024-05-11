@@ -5,7 +5,7 @@ if __name__ == "__main__":
     import sys
 
     arg_v = sys.argv
-    len_argv = len(arg_v) - 1 # Just arguments no file name
+    len_argv = len(arg_v) - 1  # Just arguments no file name
 
     if len_argv > 1:
         print(len_argv, "arguments:")
