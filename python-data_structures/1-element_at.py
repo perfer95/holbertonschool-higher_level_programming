@@ -5,7 +5,7 @@ def element_at(my_list, idx):
     """
     Function that retrieves an element from a list.
     """
-    len_list = len(idx)
+    len_list = len(my_list)
 
     if idx  < 0 or idx > (len_list - 1):
         return None
