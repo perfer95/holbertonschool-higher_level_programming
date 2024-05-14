@@ -12,5 +12,5 @@ def print_matrix_integer(matrix=[[]]):
                 print("{:d} ".format(matrix[i][j]), end="")
             else:
                 print("{:d}".format(matrix[i][j]))
-    if (len(matrix) == 0) and (len(matrix[i]) == 0):
+    if (len(matrix) == 0) and (len(matrix[0]) == 0):
         print("")
