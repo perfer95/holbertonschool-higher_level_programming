@@ -5,10 +5,7 @@ def delete_at(my_list=[], idx=0):
     """
     function that deletes the item at a specific position in a list.
     """
-    new_list = []
+    if idx >= 0 and idx < len(my_list):
+        del my_list[idx]
 
-    for i in range(0, len(my_list)):
-        if i != idx:
-            new_list.append(my_list[i])
-
-    return new_list
+    return my_list
