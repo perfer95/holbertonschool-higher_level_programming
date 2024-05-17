@@ -7,6 +7,6 @@ def print_sorted_dictionary(a_dictionary):
     """
     tupla_sort = set(a_dictionary.keys())
 
-    for i in range(tupla_sort):
+    for i in tupla_sort:
         print("{}: {}".format(i, a_dictionary[i]))
 
