@@ -9,4 +9,3 @@ def print_sorted_dictionary(a_dictionary):
 
     for i in tupla_sort:
         print("{}: {}".format(i, a_dictionary[i]))
-
