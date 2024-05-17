@@ -5,7 +5,7 @@ def print_sorted_dictionary(a_dictionary):
     """
     Function that prints a dictionary by ordered keys.
     """
-    tupla_sort = set(a_dictionary.keys())
+    tupla_sort = sorted(a_dictionary.keys())
 
     for i in tupla_sort:
         print("{}: {}".format(i, a_dictionary[i]))
