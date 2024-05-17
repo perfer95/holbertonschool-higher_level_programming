@@ -10,6 +10,6 @@ def uniq_add(my_list=[]):
     sum_list = 0
 
     for i in set_list:
-        sum_list += set_list
+        sum_list += int(i)
 
     return sum_list
