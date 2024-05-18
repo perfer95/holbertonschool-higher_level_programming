@@ -5,7 +5,7 @@ def best_score(a_dictionary):
     """
     Function that returns a key with the biggest integer value.
     """
-    if len(a_dictionary) == 0 or not isinstance(a_dictionary, dict):
+    if not isinstance(a_dictionary, dict) or len(a_dictionary) == 0:
         return None
 
     keys = list(a_dictionary.keys())
