@@ -5,7 +5,7 @@ def roman_to_int(roman_string):
     """
     Function that converts a Roman numeral to an integer.
     """
-    if (not isinstance(roman_string, str)) or (roman_string == None):
+    if (not isinstance(roman_string, str)) or (roman_string is None):
         return 0
     roman_nums = {
             "I": 1,
