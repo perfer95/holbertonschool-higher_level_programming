@@ -10,14 +10,16 @@ class Square:
     Defines a square:
     """
 
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0,0)):
         """
         New Square
 
         Args:
             size: size of square (int)
+            position: The position of the square (int, int)
         """
         self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -51,7 +53,7 @@ class Square:
         return self.__size * self.__size
 
     def my_print(self):
-        if self.__size is 0:
+        if self.__size == 0:
             print("")
         else:
             print('\n' * self.__position[1], end='')
