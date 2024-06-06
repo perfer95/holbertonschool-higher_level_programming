@@ -10,3 +10,9 @@ function that adds 2 integers.
 13
 >>> add_integer(6.5, 7.5)
 13
+>>> add_integer("6", 7)
+TypeError: a must be an integer
+>>> add_integer(6, "7")
+TypeError: b must be an integer
+>>> add_integer("6", "7")
+TypeError: b must be an integer
