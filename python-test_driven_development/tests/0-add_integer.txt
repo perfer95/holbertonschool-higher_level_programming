@@ -1,15 +1,19 @@
 0-add_integer
 function that adds 2 integers.
 
->>> add_integer = __import__('0-add_integer').add_integer
+Test - Integer numbers
 >>> add_integer(6, 7)
 13
+
+Test - Float numbers combination
 >>> add_integer(6.5, 7)
 13
 >>> add_integer(6, 7.5)
 13
 >>> add_integer(6.5, 7.5)
 13
+
+Test - No integers and float
 >>> add_integer("6", 7)
 Traceback (most recent call last):
 TypeError: a must be an integer
@@ -19,3 +23,8 @@ TypeError: b must be an integer
 >>> add_integer("6", "7")
 Traceback (most recent call last):
 TypeError: a must be an integer
+
+Test - Overflow
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
