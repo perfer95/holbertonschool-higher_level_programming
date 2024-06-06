@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 # 0-add_integer.py
-# """ Here comes a little description """
+"""
+Here is de excersice of add two integers
+"""
 
 def add_integer(a, b=98):
     if not(isinstance(a, int) or isinstance(a, float)):
