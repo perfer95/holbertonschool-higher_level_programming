@@ -1,0 +1,12 @@
+0-add_integer
+function that adds 2 integers.
+
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(6, 7)
+13
+>>> add_integer(6.5, 7)
+13
+>>> add_integer(6, 7.5)
+13
+>>> add_integer(6.5, 7.5)
+13
