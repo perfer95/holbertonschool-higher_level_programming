@@ -35,3 +35,9 @@ Test - NaN values
 >>> add_integer(float('nan'))
 Traceback (most recent call last):
 ValueError: cannot convert float NaN to integer
+
+Test - Missing one argument
+>>> add_integer(6)
+104
+Test - Missing two arguments
+
