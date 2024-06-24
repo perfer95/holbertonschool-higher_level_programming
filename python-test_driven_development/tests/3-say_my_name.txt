@@ -7,7 +7,7 @@
 My name is fer per
 
 >>> say_my_name("fer")
-My name is fer
+My name is fer 
 
 #No correct arguments
 >>> say_my_name()
