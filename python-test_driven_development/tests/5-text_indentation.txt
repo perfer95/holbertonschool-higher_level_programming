@@ -1,0 +1,25 @@
+5-text_indentation
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+#Correct inputs
+>>> text_indentation("test?")
+test?
+<BLANKLINE>
+
+>>> text_indentation("we are testing, are you sure?")
+we are testing,
+<BLANKLINE>
+are you sure?
+<BLANKLINE>
+
+#Bad inputs
+>>> text_indentation(10)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation([1,2,3,4])
+Traceback (most recent call last):
+TypeError: text must be a string
+
+
