@@ -15,12 +15,13 @@ def text_indentation(text):
     end = 0
 
     for i in text:
-        if i in ".?:":
+        if i in ".?:" or ((end + 1) == len(text)):
             if text[start] == " ":
                 start += 1
             end += 1
             print(text[start:end])
             start = end
-            print("")
+            if i in ".?:":
+                print("")
         else:
             end += 1

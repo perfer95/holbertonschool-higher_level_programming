@@ -13,6 +13,9 @@ we are testing,
 are you sure?
 <BLANKLINE>
 
+>>> text_indentation("we are testing")
+we are testing
+
 #Bad inputs
 >>> text_indentation(10)
 Traceback (most recent call last):
