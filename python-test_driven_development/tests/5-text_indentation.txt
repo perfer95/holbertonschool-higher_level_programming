@@ -7,7 +7,7 @@
 test?
 <BLANKLINE>
 
->>> text_indentation("we are testing, are you sure?")
+>>> text_indentation("we are testing. are you sure?")
 we are testing,
 <BLANKLINE>
 are you sure?
