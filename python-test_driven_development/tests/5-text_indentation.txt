@@ -8,7 +8,7 @@ test?
 <BLANKLINE>
 
 >>> text_indentation("we are testing. are you sure?")
-we are testing,
+we are testing.
 <BLANKLINE>
 are you sure?
 <BLANKLINE>
