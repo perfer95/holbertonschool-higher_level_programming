@@ -60,6 +60,13 @@ class Test_M_I(unittest.TestCase):
         """
         ints_and_floats = [1, 2.05, 3, 4.78, 5]
         self.assertEqual(max_integer(ints_and_floats), 5)
+    
+    def test_max_at_begginning(self):
+        """
+        Test a list with a beginning max value.
+        """
+        max_at_beginning = [5, 4, 3, 2, 1]
+        self.assertEqual(max_integer(max_at_beginning), 5)
 
     def test_string(self):
         """
