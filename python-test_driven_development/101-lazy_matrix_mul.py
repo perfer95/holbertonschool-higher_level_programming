@@ -28,11 +28,11 @@ def lazy_matrix_mul(m_a, m_b):
     for row in m_a:
         for elem in row:
             if not isinstance(elem, (int, float)):
-                raise TypeError("m_a should contain only integers or floats")
+                raise TypeError("invalid data type for einsum")
     for row in m_b:
         for elem in row:
             if not isinstance(elem, (int, float)):
-                raise TypeError("m_b should contain only integers or floats")
+                raise TypeError("invalid data type for einsum")
 
     if not all(len(row) == len(m_a[0]) for row in m_a):
         raise TypeError("each row of m_a must be of the same size")
