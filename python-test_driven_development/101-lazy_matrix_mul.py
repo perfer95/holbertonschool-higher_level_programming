@@ -11,14 +11,14 @@ def lazy_matrix_mul(m_a, m_b):
     Function that multiplies 2 matrices by using the module NumPy
     """
     if not isinstance(m_a, list):
-        raise TypeError("m_a must be a list")
+        raise TypeError("Scalar operands are not allowed, use '*' instead")
     if not isinstance(m_b, list):
-        raise TypeError("m_b must be a list")
+        raise TypeError("Scalar operands are not allowed, use '*' instead")
 
     if not all(isinstance(row, list) for row in m_a):
-        raise TypeError("Scalar operands are not allowed, use '*' instead")
+        raise TypeError("m_a must be a list of lists")
     if not all(isinstance(row, list) for row in m_b):
-        raise TypeError("Scalar operands are not allowed, use '*' instead")
+        raise TypeError("m_a must be a list of lists")
 
     if m_a == [] or m_a == [[]]:
         raise ValueError("m_a can't be empty")
