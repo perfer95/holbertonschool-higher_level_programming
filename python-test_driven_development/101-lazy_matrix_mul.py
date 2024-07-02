@@ -18,7 +18,7 @@ def lazy_matrix_mul(m_a, m_b):
     if not all(isinstance(row, list) for row in m_a):
         raise TypeError("m_a must be a list of lists")
     if not all(isinstance(row, list) for row in m_b):
-        raise TypeError("m_a must be a list of lists")
+        raise TypeError("m_b must be a list of lists")
 
     if m_a == [] or m_a == [[]]:
         raise ValueError("shapes (1,0) and (2,2) not aligned: 0 (dim 1) != 2 (dim 0)")
