@@ -3,7 +3,7 @@
 """
 7. Lazy matrix multiplication
 """
-import numpy as np
+import numpy
 
 
 def lazy_matrix_mul(m_a, m_b):
@@ -42,4 +42,4 @@ def lazy_matrix_mul(m_a, m_b):
     if len(m_a[0]) != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
 
-    return np.dot(m_a, m_b)
+    return numpy.matrix(m_a) * numpy.matrix(m_b)
