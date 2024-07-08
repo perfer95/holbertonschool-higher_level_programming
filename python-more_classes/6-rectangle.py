@@ -8,11 +8,11 @@ class Rectangle:
     """
     Class that defines a rectangle
     """
-    instance_counter = 0
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """ Initialize rectangugle attributes """
-        Rectangle.instance_counter += 1
+        Rectangle.number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -75,5 +75,5 @@ class Rectangle:
 
     def __del__(self):
         """ Message delete """
-        Rectangle.instance_counter -= 1
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
