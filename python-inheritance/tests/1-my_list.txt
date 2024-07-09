@@ -8,6 +8,13 @@
 >>> print(my_list)
 [1, 2, 3]
 
+>>> list_1 = MyList([3, 1, 2])
+>>> print(list_1)
+[3, 1, 2]
+>>> list_1.print_sorted()
+[1, 2, 3]
+
+
 >>> neg_list = MyList([-1, 2, 0, 1, -2])
 >>> neg_list.print_sorted()
 [-2, -1, 0, 1, 2]
