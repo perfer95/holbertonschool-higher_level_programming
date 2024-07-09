@@ -7,6 +7,8 @@
 >>> my_list = MyList([1, 2, 3])
 >>> print(my_list)
 [1, 2, 3]
+>>> isinstance(my_list, list)
+True
 
 >>> list_1 = MyList([3, 1, 2])
 >>> print(list_1)
