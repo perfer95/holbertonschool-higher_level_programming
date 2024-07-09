@@ -21,6 +21,7 @@ True
 >>> neg_list.print_sorted()
 [-2, -1, 0, 1, 2]
 
+>>> list_2 = MyList()
 >>> list_2.append(4)
 >>> list_2.append(6)
 >>> list_2.append(5)
