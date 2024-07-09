@@ -50,3 +50,6 @@ True
 >>> empty_list.print_sorted()
 []
 
+
+>>> my_list.print_sorted() == my_list
+False
