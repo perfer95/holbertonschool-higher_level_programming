@@ -32,3 +32,9 @@ True
 [1, 2, 3, 4]
 >>> my_list.print_sorted()
 [1, 2, 3, 4]
+
+
+>>> my_list = MyList(None)
+Traceback (most recent call last):
+TypeError: 'NoneType' object is not iterable
+
