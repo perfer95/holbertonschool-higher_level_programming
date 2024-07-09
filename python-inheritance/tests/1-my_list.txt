@@ -52,4 +52,5 @@ True
 
 
 >>> my_list.print_sorted() == my_list
+[1, 2, 3, 5, 6, 7]
 False
