@@ -1,0 +1,25 @@
+1-my_list
+
+
+>>> MyList = __import__('1-my_list').MyList
+
+#Correct cases
+>>> my_list = MyList([1, 2, 3])
+>>> print(my_list)
+[1, 2, 3]
+
+#Implementing append
+>>> my_list.append(4)
+>>> print(my_list)
+[1, 2, 3, 4]
+
+#Implementing sorted
+>>> my_list_unsorted = MyList([4, 1, 3, 2])
+>>> my_list.print_sorted()
+[1, 2, 3, 4]
+
+#Empyt list
+>>> empty_list = MyList()
+>>> empty_list.print_sorted()
+[]
+
