@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-8. Rectangle
+9. Full rectangle
 """
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
