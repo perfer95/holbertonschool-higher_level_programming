@@ -30,6 +30,8 @@ class Circle(Shape):
 
     def perimeter(self):
         """ Calculate Perimeter"""
+        if self.radius < 0:
+            return -(pi * (abs(self.radius) * 2))
         return pi * (self.radius * 2)
 
 class Rectangle(Shape):
