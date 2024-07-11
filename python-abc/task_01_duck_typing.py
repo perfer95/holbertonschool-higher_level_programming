@@ -30,8 +30,6 @@ class Circle(Shape):
 
     def perimeter(self):
         """ Calculate Perimeter"""
-        if self.radius < 0:
-            raise ValueError("Radius must be positive")
         return pi * (self.radius * 2)
 
 class Rectangle(Shape):
