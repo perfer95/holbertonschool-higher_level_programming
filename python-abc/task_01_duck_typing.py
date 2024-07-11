@@ -22,8 +22,6 @@ class Circle(Shape):
     """ Circle Class"""
     def __init__(self, radius):
         """ Contructor """
-        if radius < 0:
-            raise ValueError("Radius must be non-negative")
         self.radius = radius
 
     def area(self):
@@ -32,6 +30,8 @@ class Circle(Shape):
 
     def perimeter(self):
         """ Calculate Perimeter"""
+        if self.radius < 0:
+            raise ValueError("Radius must be positive")
         return pi * (self.radius * 2)
 
 class Rectangle(Shape):
