@@ -7,10 +7,10 @@ from abc import ABC, abstractmethod
 
 class Animal(ABC):
     """ Abstrac Class """
-     @abstractmethod
-     def sound(self):
-         """ Sound Abstrac Method"""
-         pass
+    @abstractmethod
+    def sound(self):
+        """ Sound Abstrac Method"""
+        pass
 
 class Dog(Animal):
     """ Dog class """
