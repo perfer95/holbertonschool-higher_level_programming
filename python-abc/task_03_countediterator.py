@@ -7,13 +7,13 @@
 class CountedIterator():
     """ CountedIterator Class """
     def __init__(self, it):
-        self.it = iter(iterable)
+        self.it = iter(it)
         self.count = 0
 
     def __next__(self):
         try:
             item = next(self.it)
-            self.counter += 1
+            self.count += 1
             return item
         except StopIteration:
             raise StopIteration("No more items to iterate")
