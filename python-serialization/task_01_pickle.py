@@ -6,38 +6,32 @@ import pickle
 
 
 class CustomObject:
-    """class displays attributes
-    Args:
-        name: string
-        age: integer
-        is_student: boolean
-    """
+    """ CustomObject Class """
     def __init__(self, name, age, is_student):
-        """method initializes object"""
+        """ CustomObject Contruct """
         self.name = name
         self.age = age
         self.is_student = is_student
 
     def display(self):
-        """method prints out attributes"""
+        """ Print attributes """
         print(f"Name: {self.name}")
         print(f"age: {self.age}")
         print(f"Is Student: {self.is_student}")
 
     def serialize(self, filename):
-        """method serializes the current instance of the object"""
+        """ Serialize """
         try:
-            with open(filename, "wb") as f:
-                pickle.dump(self, f)
+            with open(filename, 'wb') as file:
+                pickle.dump(self, file)
         except:
             return None
 
     @classmethod
     def deserialize(cls, filename):
-        """method returns instance of custom object"""
+        """ Deserialize file"""
         try:
-            with open(filename, "rb") as f:
-                ret = pickle.load(f)
-            return ret
+            with open(filename, 'rb') as file:
+                return pickle.load(file)
         except:
             return None
