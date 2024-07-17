@@ -6,6 +6,7 @@ import pickle
 
 
 class CustomObject:
+    """ CustomObject Class """
     def __init__(self, name, age, is_student):
         """ CustomObject Contruct """
         self.name = name
@@ -22,8 +23,6 @@ class CustomObject:
                 pickle.dump(self, file)
         except FileNotFoundError:
             print(f"Error: {filename} not found.")
-        except pickle.PickleError as e:
-            print("Error serializing ", e)
 
     @classmethod
     def deserialize(cls, filename):
@@ -33,7 +32,4 @@ class CustomObject:
                 return pickle.load(file)
         except FileNotFoundError:
             print(f"Error: {filename} not found.")
-            return None
-        except pickle.PickleError as e:
-            print("Error deserializing:", e)
             return None
