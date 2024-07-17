@@ -16,7 +16,8 @@ class CustomObject:
     def display(self):
         """ Print attributes """
         print(f"Name: {self.name}\nAge: {self.age}\n"
-              f"Is Student: {self.is_student}")
+                f"Is Student: {self.is_student}")
+
     def serialize(self, filename):
         try:
             with open(filename, 'wb') as file:
