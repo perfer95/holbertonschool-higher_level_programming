@@ -4,6 +4,7 @@
 """
 import http.server
 import socketserver
+import json
 
 
 PORT = 8000
@@ -36,6 +37,8 @@ class Server(http.server.BaseHTTPRequestHandler):
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
             self.wfile.write(b"404 Not Found")
+
+SimpleHTTPRequestHandler = Server
 
 with socketserver.TCPServer(("", PORT), SimpleHTTPRequestHandler) as httpd:
     httpd.serve_forever()
